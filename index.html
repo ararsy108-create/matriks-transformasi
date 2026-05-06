@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriks Transformasi</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+</head>
+<body align="center">
+    <h1>Matriks Tranformasi</h1>
+    <h1>\(T(v_1, v_2) = (v_1 - v_2,\; v_1 + 2v_2)\)</h1>
+    <iframe class="iframe-navbar" 
+        src="https://www.geogebra.org/calculator/uuu2tjhb" height="100%" width="90%"
+        allowfullscreen>
+    </iframe>
+    <table style="width:100%; table-layout:fixed;">
+        <tr>
+            <td style="width:50%; vertical-align:top; padding-right:20px;">
+                <h2>A. Matriks Transformasi dari A -> B -> C</h2>
+                <p>\(a = 2,3\) 
+                    <br>
+                    \(b = 2,1\)
+                    <br>
+                    \(c = 4,1\)
+                    <br>
+                    <br>
+                    <h4>Dari (2, 3) → (2, 1)</h4>
+
+                    $$
+                    \begin{cases}
+                    2a + 3b = 2 \\
+                    2c + 3d = 1
+                    \end{cases}
+                    $$
+
+                    <h4>Dari (2, 1) → (4, 1)</h4>
+
+                    $$
+                    \begin{cases}
+                    2a + b = 4 \\
+                    2c + d = 1
+                    \end{cases}
+                    $$
+
+                    <h4>Cari a dan b</h4>
+
+                    $$
+                    (2a + 3b) - (2a + b) = 2 - 4
+                    $$
+
+                    $$
+                    2b = -2 \Rightarrow b = -1
+                    $$
+
+                    $$
+                    2a + (-1) = 4 \Rightarrow 2a = 5 \Rightarrow a = \frac{5}{2}
+                    $$
+
+                    <h4>Cari c dan d</h4>
+
+                    $$
+                    (2c + 3d) - (2c + d) = 1 - 1
+                    $$
+
+                    $$
+                    2d = 0 \Rightarrow d = 0
+                    $$
+
+                    $$
+                    2c + 0 = 1 \Rightarrow c = \frac{1}{2}
+                    $$
+                    <br>
+                    <h3>Hasil matriks Transformasinya yaitu:</h3>
+                    $$
+                    \begin{pmatrix}
+                    \frac{5}{2} & -1 \\
+                    \frac{1}{2} & 0
+                    \end{pmatrix}
+                    $$
+                    <br>
+                    <br>
+                    <h3>Pembuktian dari A ke B</h3>
+                    $$
+                    \begin{pmatrix}
+                    \frac{5}{2} & -1 \\
+                    \frac{1}{2} & 0
+                    \end{pmatrix}
+                    \begin{pmatrix}
+                    2 \\
+                    3
+                    \end{pmatrix}
+                    =
+                    \begin{pmatrix}
+                    2 \\
+                    1
+                    \end{pmatrix}
+                    $$
+                    <br>
+                    <br>
+                    <h3>Pembuktian dari B ke C</h3>
+                    $$
+                    \begin{pmatrix}
+                    \frac{5}{2} & -1 \\
+                    \frac{1}{2} & 0
+                    \end{pmatrix}
+                    \begin{pmatrix}
+                    2 \\
+                    1
+                    \end{pmatrix}
+                    =
+                    \begin{pmatrix}
+                    4 \\
+                    1
+                    \end{pmatrix}
+                    $$
+                </p>
+            </td>
+            <td style="width:50%; vertical-align:top; padding-left:20px;">
+                <h2>B. Matriks Transformasi dari D -> E -> F</h2>
+                <p>
+                    \(d = 2,4\) 
+                    <br>
+                    \(e = 2,0\)
+                    <br>
+                    \(f = 4,0\)
+                    <br>
+                    <br>
+                    <h4>Dari $(2,4) \rightarrow (2,0)$</h4>
+                    $$
+                    \begin{cases}
+                    2a + 4b = 2 \\
+                    2c + 4d = 0
+                    \end{cases}
+                    $$
+                    <h4>Dari $(2,0) \rightarrow (4,0)$</h4>
+                    $$
+                    \begin{cases}
+                    2a = 4 \\
+                    2c = 0
+                    \end{cases}
+                    $$
+                    <br>
+                    <br>
+                    <h4>Dari persamaan kedua:</h4>
+                    - $2a = 4 \Rightarrow a = 2$
+                    - $2c = 0 \Rightarrow c = 0$
+                    <h4>Subtitusi ke Persamaan pertama:</h4>
+                    <h4>Cari b</h4>
+                    $$
+                    2(2) + 4b = 2 \Rightarrow 4 + 4b = 2 \Rightarrow 4b = -2 \Rightarrow b = -\frac{1}{2}
+                    $$
+
+                    <h4>Cari d</h4>
+                    $$
+                    2(0) + 4d = 0 \Rightarrow d = 0
+                    $$
+
+                    <h3>Hasil Matriks Transformasi:</h3>
+                    $$
+                    M =
+                    \begin{pmatrix}
+                    2 & -\frac{1}{2} \\
+                    0 & 0
+                    \end{pmatrix}
+                    $$
+                    <br>
+                    <br>
+                    <h3>Pembuktian dari D ke E</h3>
+                    $$
+                    \begin{pmatrix}
+                    2 & -\frac{1}{2} \\
+                    0 & 0
+                    \end{pmatrix}
+                    \begin{pmatrix}
+                    2 \\
+                    4
+                    \end{pmatrix}
+                    =
+                    \begin{pmatrix}
+                    2 \\
+                    0
+                    \end{pmatrix}
+                    $$
+                    <br>
+                    <br>
+                    <h3>Pembuktian dari E ke F</h3>
+                    $$
+                    \begin{pmatrix}
+                    2 & -\frac{1}{2} \\
+                    0 & 0
+                    \end{pmatrix}
+                    \begin{pmatrix}
+                    2 \\
+                    0
+                    \end{pmatrix}
+                    =
+                    \begin{pmatrix}
+                    4 \\
+                    0
+                    \end{pmatrix}
+                    $$
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
